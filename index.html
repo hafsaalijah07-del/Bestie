@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Lover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{background-color:rgb(196, 54, 149);color:white;}
+        .navbar-brand, .nav-link{color:rgb(174, 68, 164)!important; text-decoration:underline;}
+        #submitBtn{margin-top:7px;}  
+        #secret-content{transition:all 0.5s ease;}
+        h3{color:rgb(177, 26, 26); font-weight:bold; font-style:italic; }      
+        #myCarousel {
+            background: white; 
+            padding: 20px;
+            border-radius: 15px; 
+            margin: 50px auto;
+        }
+        #myCarousel .carousel-inner img {
+            border: 10px solid white;
+            border-bottom: 40px solid white; 
+            transform: rotate(-1deg); /* Subtle playful rotation */
+            object-fit: contain !important; 
+            background: rgb(237, 211, 211); 
+        }
+        #myCarousel .carousel-control-prev-icon,
+        #myCarousel .carousel-control-next-icon {
+            filter: invert(1); /* Flip black arrows to white */
+            background-color: rgb(196, 54, 149); /* Pink circle around the arrow */
+            border-radius: 50%;
+            padding: 20px;
+            background-size: 50%;
+        }     
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Click to see my Favourite memory 💖</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">I love you</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">You are perfect in every sense</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">We will get through</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="mb-3">
+                <label for="Name" class="form-label fs-5"><strong>Name of your bestfriend:</strong></label>
+                <input type="text" class="form-control" id="Name" placeholder="Type here....">
+                <button type="button" id="submitBtn" class="btn btn-light btn-md mt-2">Enter 🙈</button>
+            </div>
+
+            <div id="secret-content" class="d-none mt-5">
+                
+                <div class="p-5 border border-white rounded mb-4">
+                    <h1>NOORII 💖</h1>
+                    <p class="lead">YAYY!!! I am your bestie. hehhehe</p>
+                </div>
+                <h3 class="mt-5 text-white">✨ Some beautiful memories:</h3>
+
+                <div id="myCarousel" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img1.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img2.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img3.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img4.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img5.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="...">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="card mb-3 border-0 shadow text-dark" style="max-width: 700px; margin: auto;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="img.jpg" class="img-fluid rounded-start" alt="noor">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-success mb-3">YOU LOOK LIKE YOU ARE MINE</h5>
+                                <p class="card-text">You the real boss brooooooooo.</p>
+                                <p class="card-text text-muted fst-italic">ngl you are so pretty and important for me, and don't worry i am not going anywhere so relaxxxxx.</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-success border-0">
+                                <strong>I pray that we are friends in Jannah too. AMEEN</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const submitBtn = document.getElementById('submitBtn');
+    const nameInput = document.getElementById('Name');
+    const secretContent = document.getElementById('secret-content');
+
+    submitBtn.addEventListener('click', function() {
+        const enteredName = nameInput.value.trim().toLowerCase();
+        
+        // Make sure this matches what she will type!
+        const bestieName = "hafsa"; 
+
+        if (enteredName === bestieName) {
+            secretContent.classList.remove('d-none');
+            alert("Correct! Good Girl 😇");
+        } else {
+            alert("Access denied! Only the bestie is allowed here. 😑");
+            nameInput.value = "";
+        }
+    });
+</script>
+</body>
+</html>
